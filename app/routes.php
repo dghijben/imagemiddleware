@@ -13,5 +13,12 @@
 
 Route::get('/', function()
 {
-	return View::make('hello');
+    $string = 'kaka';
+
+    dd(substr($string, 0 , 1));
 });
+
+
+Route::get('/s3/{bucket}/{identifier}/{operations}/{path}', array('uses' => 'S3ImageController@process'))->where('path', '.*');
+
+Route::resource('api/config', 'ImageConfigController');
