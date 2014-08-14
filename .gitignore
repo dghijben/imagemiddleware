@@ -6,4 +6,5 @@ composer.phar
 .DS_Store
 Thumbs.db
 
+/public/images/*
 /app/json/local_configurations.json

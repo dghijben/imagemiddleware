@@ -25,6 +25,7 @@ class ImageController extends BaseController {
      */
     public function process($name, $operations, $baseTime)
     {
+
         if(! $this->checkRequestTime(time(), Input::get(self::TIME_INPUT), $baseTime)) {
 
             return Response::make('Forbidden', 403);
