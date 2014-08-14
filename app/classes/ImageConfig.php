@@ -91,8 +91,6 @@ class ImageConfig {
      */
     protected function getJsonPath()
     {
-        $path = '/json/'.App::environment().'_configurations.json';
-
-        return app_path($path);
+        return app_path('json/configurations.json');
     }
 }

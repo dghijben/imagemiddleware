@@ -7,4 +7,3 @@ composer.phar
 Thumbs.db
 
 /public/images/*
-/app/json/local_configurations.json

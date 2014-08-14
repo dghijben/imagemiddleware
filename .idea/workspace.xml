@@ -23,19 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ImageController.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/ImageController.php">
+      <file leaf-file-name="ImageConfig.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/classes/ImageConfig.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.18761063" vertical-offset="353" max-vertical-offset="1258">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="16" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="93" column="0" selection-start="1873" selection-end="1873" vertical-scroll-proportion="0.759292" vertical-offset="1152" max-vertical-offset="1717">
               <folding />
             </state>
           </provider>
@@ -77,9 +68,9 @@
         <option value="$PROJECT_DIR$/app/json/configurations.json" />
         <option value="$PROJECT_DIR$/app/json/local_configurations.json" />
         <option value="$PROJECT_DIR$/app/routes.php" />
-        <option value="$PROJECT_DIR$/app/classes/ImageConfig.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/controllers/ImageController.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/classes/ImageConfig.php" />
       </list>
     </option>
   </component>
@@ -195,6 +186,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image-middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image-middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -214,6 +223,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image-middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="image-middleware" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="classes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -301,13 +328,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/json/production_configurations.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="1" selection-start="84" selection-end="84" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="187">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589" />
@@ -371,13 +391,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/ImageOperation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="213" selection-end="213" vertical-scroll-proportion="0.36106196" vertical-offset="0" max-vertical-offset="1717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/ImageCache.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="0" selection-start="534" selection-end="534" vertical-scroll-proportion="0.8123894" vertical-offset="34" max-vertical-offset="663">
@@ -413,16 +426,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/json/local_configurations.json">
+    <entry file="file://$PROJECT_DIR$/app/json/configurations.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="1" selection-start="248" selection-end="248" vertical-scroll-proportion="0.12035398" vertical-offset="0" max-vertical-offset="565">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/json/production_configurations.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="0" selection-end="248" vertical-scroll-proportion="0.12035398" vertical-offset="0" max-vertical-offset="565">
           <folding />
         </state>
       </provider>
@@ -441,13 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/classes/ImageConfig.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.7292035" vertical-offset="1186" max-vertical-offset="1751">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ImageConfigController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.38407078" vertical-offset="191" max-vertical-offset="782">
@@ -457,14 +456,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+        <state line="9" column="0" selection-start="104" selection-end="104" vertical-scroll-proportion="0.25888324" vertical-offset="0" max-vertical-offset="591">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/ImageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="0.18761063" vertical-offset="353" max-vertical-offset="1258">
+        <state line="40" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.57876104" vertical-offset="353" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/ImageOperation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="6" selection-start="213" selection-end="213" vertical-scroll-proportion="-0.5115044" vertical-offset="493" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/classes/ImageConfig.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="93" column="0" selection-start="1873" selection-end="1873" vertical-scroll-proportion="0.759292" vertical-offset="1152" max-vertical-offset="1717">
           <folding />
         </state>
       </provider>
