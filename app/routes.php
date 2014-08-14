@@ -13,9 +13,7 @@
 
 Route::get('/', function()
 {
-    $string = 'kaka';
-
-    dd(substr($string, 0 , 1));
+    dd(App::environment());
 });
 
 Route::get('images/url/{name}/{operations}/{created_time}', array('uses' => 'ImageController@process'))->where('cached_unique', '.*');
