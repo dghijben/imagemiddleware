@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ImageController.php" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ImageController.php" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/ImageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="-3.4230769" vertical-offset="370" max-vertical-offset="1275">
+            <state line="27" column="18" selection-start="698" selection-end="698" vertical-scroll-proportion="0.18761063" vertical-offset="353" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="16" selection-start="103" selection-end="103" vertical-scroll-proportion="0.23011844" vertical-offset="0" max-vertical-offset="591">
+            <state line="8" column="16" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <folding />
             </state>
           </provider>
@@ -78,8 +78,8 @@
         <option value="$PROJECT_DIR$/app/json/local_configurations.json" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/classes/ImageConfig.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ImageController.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/controllers/ImageController.php" />
       </list>
     </option>
   </component>
@@ -455,16 +455,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ImageController.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="680" selection-end="680" vertical-scroll-proportion="-3.4230769" vertical-offset="370" max-vertical-offset="1275">
+        <state line="8" column="16" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/app/controllers/ImageController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="16" selection-start="103" selection-end="103" vertical-scroll-proportion="0.23011844" vertical-offset="0" max-vertical-offset="591">
+        <state line="27" column="18" selection-start="698" selection-end="698" vertical-scroll-proportion="0.18761063" vertical-offset="353" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
