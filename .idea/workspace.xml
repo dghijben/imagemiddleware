@@ -23,10 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="configurations.json" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/json/configurations.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="80" selection-start="328" selection-end="328" vertical-scroll-proportion="0.12035398" vertical-offset="0" max-vertical-offset="565">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="9" selection-start="96" selection-end="96" vertical-scroll-proportion="0.23011844" vertical-offset="0" max-vertical-offset="591">
+            <state line="8" column="9" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
               <folding />
             </state>
           </provider>
@@ -65,11 +74,11 @@
         <option value="$PROJECT_DIR$/app/classes/ImageOperation.php" />
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/controllers/ImageController.php" />
-        <option value="$PROJECT_DIR$/app/json/configurations.json" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/json/.gitignore" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/json/configurations.json" />
       </list>
     </option>
   </component>
@@ -371,13 +380,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/json/configurations.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="75" selection-start="159" selection-end="159" vertical-scroll-proportion="0.06017699" vertical-offset="0" max-vertical-offset="565">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="10" selection-start="118" selection-end="118" vertical-scroll-proportion="0.12035398" vertical-offset="0" max-vertical-offset="765">
@@ -394,7 +396,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="9" selection-start="96" selection-end="96" vertical-scroll-proportion="0.23011844" vertical-offset="0" max-vertical-offset="591">
+        <state line="8" column="9" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/json/configurations.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="80" selection-start="328" selection-end="328" vertical-scroll-proportion="0.12035398" vertical-offset="0" max-vertical-offset="565">
           <folding />
         </state>
       </provider>
