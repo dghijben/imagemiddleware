@@ -19,7 +19,7 @@ class ImageConfig {
     {
         $this->imageOperation = $imageOperation;
 
-        $this->configurations = $this->loadConfig();
+        $this->loadConfig();
     }
 
     /**
@@ -44,17 +44,17 @@ class ImageConfig {
     }
 
     /**
-     * @param $identifier
+     * @param $name
      * @param ImageOperation $operation
      * @return bool
      */
-    public function hasOperations($identifier, ImageOperation $operation)
+    public function hasOperations($name, ImageOperation $operation)
     {
-        foreach($this->get() as $configIdentifier => $configOperations) {
+        foreach($this->get() as $configuration) {
 
-            if($configIdentifier !== $identifier) continue;
+            if($configuration->name !== $name) continue;
 
-            foreach($configOperations as $configOperation)
+            foreach($configuration->operations as $configOperation)
             {
                 if($this->matchOperation($configOperation, $operation)) return true;
             }
@@ -64,35 +64,18 @@ class ImageConfig {
     }
 
     /**
-     * @param $operation1
-     * @param $operation2
+     * @param $configOperation
+     * @param ImageOperation $operation
      * @return bool
      */
-    protected function matchOperation(ImageOperation $operation1, ImageOperation $operation2)
+    protected function matchOperation($configOperation, ImageOperation $operation)
     {
-        return $operation1->match($operation2);
+        return $operation->match($configOperation);
     }
 
-    /**
-     * @return array
-     */
-    protected function loadConfig()
+    public function loadConfig()
     {
-        $configurations = array();
-
-        $json = $this->getJson();
-
-        foreach($json as $identifier => $jsonOperations) {
-
-            $configurations[$identifier] = array();
-
-            foreach($jsonOperations as $method => $params) {
-
-                $configurations[$identifier][] = $this->imageOperation->make($method, $params);
-            }
-        }
-
-        return $configurations;
+        $this->configurations = $this->getJson();
     }
 
     /**
@@ -108,6 +91,6 @@ class ImageConfig {
      */
     protected function getJsonPath()
     {
-        return app_path('/json/operations.json');
+        return app_path('/json/configurations.json');
     }
 }

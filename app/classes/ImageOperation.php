@@ -9,7 +9,7 @@ class ImageOperation {
      * @var array
      */
     protected static $allowedMethods = array(
-        'resize', 'crop'
+        'resize', 'fit'
     );
 
     /**
@@ -36,7 +36,7 @@ class ImageOperation {
      * @param ImageOperation $operation
      * @return bool
      */
-    public function match(ImageOperation $operation)
+    public function match($operation)
     {
         if($this->method != $operation->method) return false;
 

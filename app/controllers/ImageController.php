@@ -1,40 +1,43 @@
 <?php
 
-class S3ImageController extends BaseController {
+class ImageController extends BaseController {
+
+    const URL_INPUT = 'i';
+    const TIME_INPUT = 'k';
 
     /**
-     * @param S3Image $s3Images
      * @param ImageOperation $imageOperation
      * @param ImageCache $imageCache
      * @param ImageConfig $imageConfig
      */
-    public function __construct(S3Image $s3Images, ImageOperation $imageOperation,
-                                ImageCache $imageCache, ImageConfig $imageConfig)
+    public function __construct(ImageOperation $imageOperation, ImageCache $imageCache, ImageConfig $imageConfig)
     {
-        $this->s3Images = $s3Images;
         $this->imageOperation = $imageOperation;
         $this->imageCache = $imageCache;
         $this->imageConfig = $imageConfig;
     }
 
     /**
-     * @param $bucket
-     * @param $identifier
+     * @param $name
      * @param $operations
-     * @param $path
+     * @param $baseTime
      * @return mixed
      */
-    public function process($bucket, $identifier, $operations, $path)
+    public function process($name, $operations, $baseTime)
     {
+        if(! $this->checkRequestTime(time(), Input::get(self::TIME_INPUT), $baseTime)) {
+
+            return Response::make('Forbidden', 403);
+        }
+
         $operations = $this->imageOperation->decode($operations);
 
-        // Get original image from s3
-        $image = $this->s3Images->get($bucket, $path);
+        $image = Image::make(Input::get(self::URL_INPUT));
 
         // Run operations on this image if operation exists in the image configuration.
         foreach($operations as $operation)
         {
-            if(! $this->imageConfig->hasOperations($identifier, $operation)) {
+            if(! $this->imageConfig->hasOperations($name, $operation)) {
 
                 return Response::make("Image configuration not found!", 400);
             }
@@ -52,4 +55,15 @@ class S3ImageController extends BaseController {
         return $image->response();
     }
 
-} 
+    /**
+     *
+     */
+    protected function checkRequestTime($current, $requestTime, $baseTime, $tolerance = 30)
+    {
+        $requestTime = $requestTime + $baseTime;
+
+        $start = $current - $tolerance;
+
+        return $requestTime >= $start && $requestTime <= $current;
+    }
+}

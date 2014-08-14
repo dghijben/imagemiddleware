@@ -30,11 +30,11 @@ class ImageConfigController extends \BaseController {
 	 */
 	public function store()
 	{
-        if(! $this->api->checkKey(Input::get('key')) || ! $this->api->checkSignature(Input::get('signature')))
-        {
-            return Response::make('Forbidden', 403);
-        }
+//        if(! $this->api->checkKey(Input::get('key')) || ! $this->api->checkSignature(Input::get('signature')))
+//        {
+//            return Response::make('Forbidden', 403);
+//        }
 
-        $this->imageConfig->set(Input::all());
+        $this->imageConfig->set(Input::except('key', 'signature'));
 	}
 }

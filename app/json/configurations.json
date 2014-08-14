@@ -1,0 +1,5 @@
+[
+    {"name":"products"  ,"operations":[{"method":"fit","params":["400","400"]}]},
+    {"name":"categories","operations":[{"method":"fit","params":["400","250"]}]},
+    {"name":"brands"    ,"operations":[{"method":"fit","params":["400","400"]}]}
+]

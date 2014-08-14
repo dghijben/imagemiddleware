@@ -18,7 +18,6 @@ Route::get('/', function()
     dd(substr($string, 0 , 1));
 });
 
-
-Route::get('/s3/{bucket}/{identifier}/{operations}/{path}', array('uses' => 'S3ImageController@process'))->where('path', '.*');
+Route::get('images/url/{name}/{operations}/{created_time}', array('uses' => 'ImageController@process'))->where('cached_unique', '.*');
 
 Route::resource('api/config', 'ImageConfigController');
