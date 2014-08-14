@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+      <file leaf-file-name="ImageController.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/ImageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="10" selection-start="113" selection-end="113" vertical-scroll-proportion="0.28764805" vertical-offset="0" max-vertical-offset="591">
+            <state line="26" column="5" selection-start="679" selection-end="679" vertical-scroll-proportion="0.14336284" vertical-offset="361" max-vertical-offset="1275">
               <folding />
             </state>
           </provider>
@@ -62,7 +62,6 @@
         <option value="$PROJECT_DIR$/app/controllers/ImageConfigController.php" />
         <option value="$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php" />
         <option value="$PROJECT_DIR$/app/classes/ImageOperation.php" />
-        <option value="$PROJECT_DIR$/app/controllers/ImageController.php" />
         <option value="$PROJECT_DIR$/app/config/app.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/app/json/.gitignore" />
@@ -71,6 +70,7 @@
         <option value="$PROJECT_DIR$/app/routes.php" />
         <option value="$PROJECT_DIR$/app/classes/ImageConfig.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/app/controllers/ImageController.php" />
       </list>
     </option>
   </component>
@@ -374,13 +374,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ImageConfigController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="51" selection-start="746" selection-end="746" vertical-scroll-proportion="0.63893807" vertical-offset="217" max-vertical-offset="782">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/packages/barryvdh/laravel-cors/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="0" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.69911504" vertical-offset="166" max-vertical-offset="731">
@@ -458,13 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/ImageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="6" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.63893807" vertical-offset="302" max-vertical-offset="1258">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/classes/ImageConfig.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="94" column="0" selection-start="1941" selection-end="1941" vertical-scroll-proportion="0.7292035" vertical-offset="1186" max-vertical-offset="1751">
@@ -474,7 +460,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="10" selection-start="113" selection-end="113" vertical-scroll-proportion="0.28764805" vertical-offset="0" max-vertical-offset="591">
+        <state line="9" column="0" selection-start="102" selection-end="102" vertical-scroll-proportion="0.25888324" vertical-offset="0" max-vertical-offset="591">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ImageConfigController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="459" selection-end="459" vertical-scroll-proportion="0.38407078" vertical-offset="191" max-vertical-offset="782">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/ImageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="5" selection-start="679" selection-end="679" vertical-scroll-proportion="0.14336284" vertical-offset="361" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
