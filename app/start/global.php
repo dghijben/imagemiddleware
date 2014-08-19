@@ -75,6 +75,14 @@ App::singleton('API', function()
     return new API(Config::get('api.key'), Config::get('api.secret'));
 });
 
+
+App::singleton('ImageConfig', function()
+{
+    $config_cdn = Config::get('images.configuration');
+
+    return new ImageConfig(json_decode(file_get_contents($config_cdn)), App::make('ImageOperation'));
+});
+
 /*
 |--------------------------------------------------------------------------
 | Require The Filters File

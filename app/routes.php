@@ -16,6 +16,6 @@ Route::get('/', function()
     dd(App::environment());
 });
 
-Route::get('images/url/{name}/{operations}/{created_time}', array('uses' => 'ImageController@process'))->where('cached_unique', '.*');
+Route::get('images/s3/{bucket}/{name}/{operations}/{path}', array('uses' => 'S3ImageController@process'))->where('path', '.*');
 
 Route::resource('api/config', 'ImageConfigController');

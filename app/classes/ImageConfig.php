@@ -13,24 +13,19 @@ class ImageConfig {
     protected $imageOperation;
 
     /**
+     * @var
+     */
+    protected $jsonConfigurations;
+
+    /**
+     * @param $jsonConfigurations
      * @param ImageOperation $imageOperation
      */
-    public function __construct(ImageOperation $imageOperation)
+    public function __construct($jsonConfigurations, ImageOperation $imageOperation)
     {
         $this->imageOperation = $imageOperation;
 
-        $this->loadConfig();
-    }
-
-    /**
-     * Set configuration from the given array
-     *
-     * @todo validate given configurations
-     * @param $array
-     */
-    public function set($array){
-
-        file_put_contents($this->getJsonPath(), json_encode($array));
+        $this->jsonConfigurations = $jsonConfigurations;
     }
 
     /**
@@ -40,7 +35,7 @@ class ImageConfig {
      */
     public function get()
     {
-        return $this->configurations;
+        return $this->jsonConfigurations;
     }
 
     /**
@@ -71,26 +66,5 @@ class ImageConfig {
     protected function matchOperation($configOperation, ImageOperation $operation)
     {
         return $operation->match($configOperation);
-    }
-
-    public function loadConfig()
-    {
-        $this->configurations = $this->getJson();
-    }
-
-    /**
-     * @return array
-     */
-    public function getJson()
-    {
-        return json_decode(file_get_contents($this->getJsonPath()));
-    }
-
-    /**
-     * @return string
-     */
-    protected function getJsonPath()
-    {
-        return app_path('json/configurations.json');
     }
 }

@@ -9,7 +9,6 @@ class ImageCache {
      */
     public function save(Image $image)
     {
-//        dd()
         // Save image to the cached url
         $image->save($this->getCachedPath());
     }

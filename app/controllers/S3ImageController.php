@@ -1,38 +1,37 @@
 <?php
 
-class ImageController extends BaseController {
+use UrlBuilder\S3UrlBuilder;
 
-    const URL_INPUT = 'i';
-    const TIME_INPUT = 'k';
+class S3ImageController extends BaseController {
 
     /**
      * @param ImageOperation $imageOperation
      * @param ImageCache $imageCache
      * @param ImageConfig $imageConfig
+     * @param UrlBuilder\S3UrlBuilder $s3UrlBuilder
      */
-    public function __construct(ImageOperation $imageOperation, ImageCache $imageCache, ImageConfig $imageConfig)
+    public function __construct(ImageOperation $imageOperation, ImageCache $imageCache, ImageConfig $imageConfig, S3UrlBuilder $s3UrlBuilder)
     {
         $this->imageOperation = $imageOperation;
         $this->imageCache = $imageCache;
         $this->imageConfig = $imageConfig;
+        $this->s3UrlBuilder = $s3UrlBuilder;
     }
 
     /**
+     * @param $bucket
      * @param $name
      * @param $operations
-     * @param $baseTime
+     * @param $path
      * @return mixed
      */
-    public function process($name, $operations, $baseTime)
+    public function process($bucket, $name, $operations, $path)
     {
-        if(! $this->checkRequestTime(time(), Input::get(self::TIME_INPUT), $baseTime)) {
-
-            return Response::make('Forbidden', 403);
-        }
-
         $operations = $this->imageOperation->decode($operations);
 
-        $image = Image::make(Input::get(self::URL_INPUT));
+        $url = $this->s3UrlBuilder->build(compact('bucket', 'path'));
+
+        $image = Image::make($url);
 
         // Run operations on this image if operation exists in the image configuration.
         foreach($operations as $operation)
@@ -53,17 +52,5 @@ class ImageController extends BaseController {
 
         //
         return $image->response();
-    }
-
-    /**
-     *
-     */
-    protected function checkRequestTime($current, $requestTime, $baseTime, $tolerance = 30)
-    {
-        $requestTime = $requestTime + $baseTime;
-
-        $start = $current - $tolerance;
-
-        return $requestTime >= $start && $requestTime <= $current;
     }
 }
