@@ -1,5 +1,5 @@
 <?php
 
 return array(
-    'configuration' => 'http://tokyovanilla.herokuapp.com/api/configurations/images',
+    'configuration' => 'http://vanillanew.herokuapp.com/api/configurations/images',
 );
